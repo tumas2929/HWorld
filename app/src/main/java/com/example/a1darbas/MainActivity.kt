@@ -1,6 +1,5 @@
 package com.example.a1darbas
 
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -21,15 +20,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         val button = findViewById<Button>(R.id.button4)
-        val button5 = findViewById<Button>(R.id.button5)
         val tekstas = findViewById<TextView>(R.id.text)
 
         button.setOnClickListener {
             tekstas.text = "Sveikas pasauli"
-        }
-
-        button5.setOnClickListener {
-            tekstas.setTextColor(Color.BLUE)
         }
     }
 }
